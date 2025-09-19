@@ -1,12 +1,14 @@
 {
   "name": "running-group-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "LINE chatbot for tracking running group activities",
+  "main": "src/bot.js",
   "scripts": {
+    "start": "node src/bot.js",
+    "dev": "nodemon src/bot.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["line", "bot", "running"],
   "author": "",
   "license": "ISC"
 }
