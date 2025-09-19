@@ -276,14 +276,63 @@ ngrok http 3000
 
 ---
 
-## 10. Next Steps (Part 2)
+## 10. Features Implemented ✅
+
+**Completed in Part 1:**
+- ✅ Registration system (menu-based and command-based)
+- ✅ Menu system with clickable buttons
+- ✅ Activity tracking with 6 activity types (running, cycling, swimming, rowing, strength, cardio)
+- ✅ Distance/calorie conversions
+- ✅ Quick command shortcuts (e.g., `/run 5.2`)
+- ✅ Group chat support enabled
+- ✅ Both 1-on-1 and group chat functionality
+
+**Activity Conversion Rates:**
+```javascript
+running: 1        // 1 km = 1 km
+cycling: 0.3      // 1 km = 0.3 km
+swimming: 4       // 1 km = 4 km
+rowing: 0.3       // 1 km = 0.3 km
+strength: 0.0083  // 120 cal = 1 km (1 hour ≈ 3 km)
+cardio: 0.005     // 200 cal = 1 km (1 hour ≈ 3 km)
+```
+
+## 11. Current Bot Functionality
+
+**Registration:**
+- Menu-based: Type `menu` → Click "Register Now" → Enter name → Enter class
+- Quick command: `/register Name, Class Year`
+- Step-by-step: `/register` → Follow prompts
+
+**Activity Logging:**
+- Button menu: `menu` → Record Activity → Select activity → Enter value
+- Quick commands: `/run 5.2`, `/bike 10`, `/strength 350`
+
+**Supported Commands:**
+```
+/register Name, Class    - Register user
+/run X                   - Log running (km)
+/bike X                  - Log cycling (km)
+/swim X                  - Log swimming (km)
+/row X                   - Log rowing (km)
+/strength X              - Log strength (calories)
+/cardio X                - Log cardio (calories)
+/menu                    - Show main menu
+/leaderboard            - Show leaderboard (coming soon)
+```
+
+**Data Currently Stored:**
+- User registrations (in-memory)
+- Activity logs (console only - Google Sheets integration needed)
+
+## 12. Next Steps (Part 2)
 
 **To be implemented:**
-1. Menu system with clickable buttons
-2. Activity tracking with conversions
-3. Google Sheets integration
-4. Leaderboard functionality
-5. Photo upload and album features
+1. Google Sheets integration for data persistence
+2. Leaderboard functionality with rankings
+3. Photo upload and album features
+4. Data export and analysis tools
+5. LIFF form for better UX (optional upgrade)
 
 ---
 
